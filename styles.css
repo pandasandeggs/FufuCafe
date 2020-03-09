@@ -28,4 +28,8 @@ h1, h2, h3, h4, h5 {
     width: 15%;
     height: auto;
   } 
+
+  .w3-button {
+    padding: 8px 8px;
+  }
 }
