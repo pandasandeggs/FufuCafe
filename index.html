@@ -1,187 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
-        <title>FuFu Cafe</title>
-    </head>
-    <body class="container-fluid text-center">
-        <!------- HEADER AND NAVBAR ------->
-        <div class="container-fluid d-flex w-100 h-100 mx-auto flex-column" id="bg-img-home">
-            <header class="masthead"></header>
-              <div class="inner">
-                <nav class="nav nav-masthead fixed-top py-2 navbar-dark bg-dark">
-                    <h3 class="masthead-brand fixed-top pt-2">Fufu Cafe</h1>
-                    <a class="nav-link active" href="#bg-img-home">Home</a>
-                    <a class="nav-link" href="#bg-img-menu">Menu</a>
-                    <a class="nav-link" href="#bg-img-about">About</a>
-                    <a class="nav-link" href="#bg-img-contact">Contact</a>
-                    <!-- <p class="fixed-top pt-2 phone">(713) 981-8818</p> -->
-                </nav>
-              </div>
-            </header>
-            
-            <main role="main" class=" my-auto inner cover">
-              <h1 class="cover-heading display-2">Fufu Cafe</h1>
-              <p class="lead display-4">Best Chinese food in Houston!</p>
-              <p class="lead">
-                <a href="#bg-img-menu" class="btn btn-lg btn-warning">View Menu</a>
-              </p>
-            </main>
-        
-        </div>
-        <!------- MENU SECTION ------->
-        <div id="bg-img-menu" class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 justify-content-left">
-                <h2>Our Menu</h2>
-                <ul>
-                        </br>
-                    <li onclick="showMenu('app-and-soup')" name="app-and-soup" value="app-and-soup">Appetizers & Soup</li>
-                        </br>
-                    <li onclick="showMenu('vegetarian')" name="vegetarian" value="vegetarian">Vegetarian</li>
-                        </br>
-                    <li onclick="showMenu('chicken')" name="chicken" value="chicken">Chicken</li>
-                        </br>
-                    <li onclick="showMenu('beef')" name="beef" value="beef">Beef</li>
-                        </br>
-                    <li onclick="showMenu('seafood')" name="seafood" value="seafood">Seafood</li>
-                        </br>
-                    <li onclick="showMenu('dessert')" name="dessert" value="dessert">Dessert</li>
-                </ul>
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 justify-content-right" id="app-and-soup">
-                <h2>Appetizers & Soup</h2>
-                <table class="m-auto">
-                    <tr>
-                        <td>Seafood Tofu Soup</td>
-                        <td>$10.99</td>
-                    </tr>
-                    <tr>
-                        <td>Hot & Sour Soup</td>
-                        <td>$8.99</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 justify-content-left" id="vegetarian">
-                <h2>Vegetarian</h2>
-                <table class="m-auto">
-                    <tr>
-                        <td>Chinese Broccoli w/ Oyster Sauce</td>
-                        <td>$8.50</td>
-                    </tr>
-                    <tr>
-                        <td>Buddha Delight</td>
-                        <td>$8.99</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 justify-content-left" id="chicken">
-                <h2>Chicken</h2>
-                <table class="m-auto">
-                    <tr>
-                        <td>Chinese Broccoli w/ Oyster Sauce</td>
-                        <td>$8.50</td>
-                    </tr>
-                    <tr>
-                        <td>Buddha Delight</td>
-                        <td>$8.99</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 justify-content-left" id="beef">
-                <h2>Beef</h2>
-                <table class="m-auto">
-                    <tr>
-                        <td>Chinese Broccoli w/ Oyster Sauce</td>
-                        <td>$8.50</td>
-                    </tr>
-                    <tr>
-                        <td>Buddha Delight</td>
-                        <td>$8.99</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 justify-content-left" id="seafood">
-                <h2>Seafood</h2>
-                <table class="m-auto">
-                    <tr>
-                        <td>Chinese Broccoli w/ Oyster Sauce</td>
-                        <td>$8.50</td>
-                    </tr>
-                    <tr>
-                        <td>Buddha Delight</td>
-                        <td>$8.99</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 justify-content-left" id="dessert">
-                <h2>Dessert</h2>
-                <table class="m-auto">
-                    <tr>
-                        <td>Chinese Broccoli w/ Oyster Sauce</td>
-                        <td>$8.50</td>
-                    </tr>
-                    <tr>
-                        <td>Buddha Delight</td>
-                        <td>$8.99</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <!------- ABOUT SECTION ------->
-        <div id="bg-img-about" class="row">
-            <div class="container-fluid">
-                <h2>About Fufu Cafe</h2>
-            </div>
-            <div>
-                <p>Gastronomy atmosphere set aside. Slice butternut cooking home. 
-                    Delicious romantic undisturbed raw platter will meld. 
-                    Thick Skewers skillet natural, smoker soy sauce wait roux. 
-                    slices rosette bone-in simmer precision alongside baby leeks. 
-                    Crafting renders aromatic enjoyment, then slices taco. 
-                    Minutes undisturbed cuisine lunch magnificent mustard curry. 
-                    Juicy share baking sheet pork. </p>
-            </div>
-            <h2>Hours & Location</h2>
-            <div>
-                <h3>Hours</h3>
-                    <p>Open 7 Days a Week</p>
-                    <p>11 a.m. - 2 a.m.</p>
-                <h3>Location</h3>
-                    <p>9889 Bellaire Blvd, #105</p>
-                    <p>Houston, TX 77036</p>
-            </div>
-        </div>
-        <!------- CONTACT SECTION ------->
-        <div id="bg-img-contact" class="row">
-            <div class="container-fluid">
-                <h2>Contact Us</h2>
-            </div>
-            <div>
-                <p>For general comments or questions about catering needs, reservations, ordering, menu items etc., please call Fu Fu Cafe directly during business hours.</p>
-                <p>Phone: (713) 981-8818</p>
-            </div>
-        </div>
-        <footer>
-            <div>
-                <h4>Social Media</h4>
-                <a class="col-lg-4 col-md-4 col-sm-4 p-3" target="_blank" href="https://www.facebook.com/pages/Fu-Fu-Cafe/1461680494065878?nr"><img src="images/facebook.png" alt="Facebook Logo"></a>
-                <a class="col-lg-4 col-md-4 col-sm-4 p-3" target="_blank" href="https://www.yelp.com/biz/fu-fu-caf%C3%A9-houston-4"><img src="images/yelp.png" alt="Yelp Logo"></a>
-                <a class="col-lg-4 col-md-4 col-sm-4 p-3" target="_blank" href="https://www.google.com/search?q=fufu+cafe+reviews&oq=fufu+cafe+reviews&aqs=chrome..69i57.2722j0j7&sourceid=chrome&ie=UTF-8#lrd=0x8640c2cf1ee90193:0x9b9b20116c6df7d2,1,,,"><img src="images/google.png" alt="Google Logo"></a>
-            </div>
-            <div>
-                <p>Copyright © 2020 Fufu Cafe</p>
-                <p>Developed by <a target="_blank" href="https://pandadoestech.com">Panda Does Tech</a></p>
-            <div>
-        </footer>
+<html>
+<title>Fufu Cafe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee&display=swap">
+<link rel="stylesheet" href="styles.css">
+<body>
 
-        <!-- BOOTSTRAP SCRIPTS -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="index.js" type="text/javascript"></script>
-    </body>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">LOCATION</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 11am to 2am</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px"><b>Fufu Cafe</b></span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-tag">9889 Bellaire Blvd, #105</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">About Fufu</span></h5>
+    <p>Food qualities braise chicken cuts bowl through slices butternut snack. Tender meat juicy dinners. One-pot low heat plenty of time adobo fat raw soften fruit. sweet renders bone-in marrow richness kitchen, fricassee basted pork shoulder. Delicious butternut squash hunk. Flavor centerpiece plate, delicious ribs bone-in meat, excess chef end. sweet effortlessly pork, low heat smoker soy sauce flavor meat, rice fruit fruit. Romantic fall-off-the-bone butternut chuck rice burgers.</p>
+    <p>Gastronomy atmosphere set aside. Slice butternut cooking home. Delicious romantic undisturbed raw platter will meld. Thick Skewers skillet natural, smoker soy sauce wait roux. slices rosette bone-in simmer precision alongside baby leeks. Crafting renders aromatic enjoyment, then slices taco. Minutes undisturbed cuisine lunch magnificent mustard curry. Juicy share baking sheet pork. Meals ramen rarities selection, raw pastries richness magnificent atmosphere. Sweet soften dinners, cover mustard infused skillet, Skewers on culinary experience.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"We have the best food in Chinatown!"</i></p>
+      <p>Chef and Owner: Owner's Name</p>
+    </div>
+    <img src="images/riceCake.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> Everyday from 11am to 2am.</p>
+    <p><strong>Address:</strong> 9889 Bellaire Blvd, #105, Houston, TX 77036</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">The Menu</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Appetizers');" id="myLink">
+        <div class="w3-col s3 tablink">Appetizers</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Seafood');">
+        <div class="w3-col s3 tablink">Seafood</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Chicken');" id="myLink">
+        <div class="w3-col s3 tablink">Chicken</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Desserts');">
+        <div class="w3-col s3 tablink">Desserts</div>
+      </a>
+    </div>
+
+    <div id="Appetizers" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Bread Basket</h5>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+      <h5>Honey Almond Granola with Fruits</h5>
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+      <h5>Belgian Waffle</h5>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+      <h5>Scrambled eggs</h5>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+      <h5>Blueberry Pancakes</h5>
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+    </div>
+
+    <div id="Seafood" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>
+    
+    <div id="Chicken" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Bread Basket</h5>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+      <h5>Honey Almond Granola with Fruits</h5>
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+      <h5>Belgian Waffle</h5>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+      <h5>Scrambled eggs</h5>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+      <h5>Blueberry Pancakes</h5>
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+    </div>
+    <div id="Desserts" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    <img src="images/chiveDumplings.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Where to Find Us</span></h5>
+    <div class="w3-center">
+      <p><span class="w3-tag">Find us at:</span> 9889 Bellaire Blvd, #105, Houston, TX 77036</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.5647187735417!2d-95.55472277245075!3d29.70339710109816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c2cf1ee901cf%3A0xbc5d9502d19ebaf8!2s9889%20Bellaire%20Blvd%20STE%20105%2C%20Houston%2C%20TX%2077036!5e0!3m2!1sen!2sus!4v1583773934189!5m2!1sen!2sus" width="300" height="225" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <p>For general comments or questions about catering needs, reservations, ordering, menu items etc., please call Fu Fu Cafe directly during business hours.</p>
+    <div class="w3-center">
+      <p><span class="w3-tag">Phone:</span> (713) 981-8818</p>
+    </div>
+    </br>
+    <p class="w3-center"><span class="w3-tag">Follow us on Facebook or leave a review!</span></p>
+    <div class="w3-center">
+        <span><a target="_blank" href="https://www.facebook.com/pages/Fu-Fu-Cafe/1461680494065878?nr"><img class="w3-center logo-icon" src="images/facebook.png" alt="Facebook Logo"></a></span>
+        <span><a target="_blank" href="https://www.yelp.com/biz/fu-fu-caf%C3%A9-houston-4"><img class="w3-center logo-icon" src="images/yelp.png" alt="Yelp Logo"></a></span>
+        <span><a target="_blank" href="https://www.google.com/search?q=fufu+cafe+reviews&oq=fufu+cafe+reviews&aqs=chrome..69i57.2722j0j7&sourceid=chrome&ie=UTF-8#lrd=0x8640c2cf1ee90193:0x9b9b20116c6df7d2,1,,,"><img class="w3-center logo-icon" src="images/google.png" alt="Google Logo"></a></span>
+    </div>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<!-- <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer> -->
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
 </html>
