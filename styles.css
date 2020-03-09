@@ -22,3 +22,10 @@ h1, h2, h3, h4, h5 {
     width: 10%;
     height: auto;
 }
+
+@media screen and (max-width: 600px) {
+  .logo-icon {
+    width: 15%;
+    height: auto;
+  } 
+}
